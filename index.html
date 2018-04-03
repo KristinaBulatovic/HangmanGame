@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<center>
+    <div>
+        <div class="main">
+            <p class="w-l" id="w/l"></p>
+            <input id="start" class="start-game" type="button" value="Start the Game" onclick="start()">
+            <div id="win/lost">
+                <p>Guesses the secret word! Letter by letter!<br>
+                    You can make 7 errors...</p>
+                <div class="left">
+                    <img id="hangman_img" src="img/1.jpg" style="width:100px;height:150px;">
+                </div>
+                <div class="right-top">
+                    <p>Enter the letter:</p>
+                    <input id="char" type="text" maxlength="1" onclick="del()" onkeydown="if (event.keyCode == 13)
+                        document.getElementById('btnSearch').click()">
+                    <input id="btnSearch" type="button" value="OK!" onclick="verification_letters()">
+                    <p id="error" class="error-text"></p>
+                </div>
+                <div class="right-bottom">
+                    <span id="span1"></span>
+                </div>
+                <div class="btn">
+                    <br>
+                    <input class="input-btn1" type="button" value="your attempts" onclick="your_attempts(1)">
+                    <input class="input-btn2" type="button" value="the number of errors made"
+                           onclick="your_attempts(2)">
+                </div>
+                <p id="btn-p"></p>
+            </div>
+        </div>
+    </div>
+</center>
+
+<script type="text/javascript" src="hangman.js"></script>
+</body>
+</html>

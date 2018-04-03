@@ -1,0 +1,60 @@
+.main {
+    width: 300px;
+}
+
+.left {
+    width: 100px;
+    float: left;
+}
+
+.right-top {
+    width: 100px;
+    height: 170px;
+}
+
+.right-bottom {
+    width: 200px;
+}
+
+.btn {
+    width: 500px;
+    float: left;
+}
+
+.input-btn1 {
+    float: left;
+    width: 120px;
+}
+
+.input-btn2 {
+    float: left;
+    width: 180px;
+}
+
+.error-text {
+    font-size: 14px;
+    color: red;
+    margin: 0;
+}
+
+.w-l {
+font-size: 50px;
+}
+
+.start-game{
+    width: 200px;
+    display: none;
+}
+
+span {
+    float: left;
+    font-size: 35px;
+}
+
+p {
+    float: left;
+}
+
+input {
+    width: 40px;
+}
